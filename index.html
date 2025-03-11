@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reloj/Cronómetro</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+</head>
+
+<body>
+    <div class="clock-container">
+        <div>
+            <label for="mode">Modo:</label>
+            <select id="mode">
+                <option value="clock">Reloj</option>
+                <option value="countdown">Cronómetro</option>
+            </select>
+        </div>
+        <div id="countdown-settings" style="display: none;">
+            <label for="hours">Horas:</label>
+            <select id="hours">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+            </select>
+            <label for="minutes">Minutos:</label>
+            <select id="minutes">
+                <option value="0">00</option>
+                <option value="5">05</option>
+                <option value="10">10</option>
+                <option value="15">15</option>
+                <option value="20">20</option>
+                <option value="25">25</option>
+                <option value="30">30</option>
+                <option value="35">35</option>
+                <option value="40">40</option>
+                <option value="45">45</option>
+                <option value="50">50</option>
+                <option value="55">55</option>
+            </select>
+            <button id="startCountdown">▶</button>
+            <button id="stopCountdown">⏸</button>
+        </div>
+        <div class="clock" id="clock">--:--:--</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
